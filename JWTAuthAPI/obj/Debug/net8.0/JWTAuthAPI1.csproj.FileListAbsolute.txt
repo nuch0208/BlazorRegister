@@ -1,0 +1,7 @@
+D:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\JWTAuthAPI1.csproj.AssemblyReference.cache
+D:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\JWTAuthAPI1.GeneratedMSBuildEditorConfig.editorconfig
+D:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\JWTAuthAPI1.AssemblyInfoInputs.cache
+D:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\JWTAuthAPI1.AssemblyInfo.cs
+D:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\JWTAuthAPI1.csproj.CoreCompileInputs.cache
+D:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\JWTAuthAPI1.MvcApplicationPartsAssemblyInfo.cs
+D:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\JWTAuthAPI1.MvcApplicationPartsAssemblyInfo.cache
