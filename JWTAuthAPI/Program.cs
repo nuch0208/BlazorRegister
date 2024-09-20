@@ -15,6 +15,17 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<MyWorldDbContext>(options => {options.UseSqlServer(builder.Configuration.GetConnectionString("sampleDb"));});
 builder.Services.AddScoped<IUserService, UserService>();
 
+builder.Services.AddCors(options => 
+{ 
+        options.AddPolicy(name: "BlazorCors", 
+            policy => 
+            { 
+                policy.WithOrigins("http://localhost:5236/")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+            });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,7 +36,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors("BlazorCors");
 app.UseAuthorization();
 
 app.MapControllers();

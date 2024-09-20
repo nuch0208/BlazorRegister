@@ -135,9 +135,10 @@ C:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeti
 C:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.JWTAuthAPI.props
 C:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\staticwebassets.pack.json
 C:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\scopedcss\bundle\JWTAuthAPI.styles.css
-C:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\JWTAuthAPI.csproj.CopyComplete
 C:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\JWTAuthAPI.dll
 C:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\refint\JWTAuthAPI.dll
 C:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\JWTAuthAPI.pdb
 C:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\JWTAuthAPI.genruntimeconfig.cache
 C:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\ref\JWTAuthAPI.dll
+C:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\JWTAuthAPI.sourcelink.json
+C:\JWTAuth\JWTAuthAPI\obj\Debug\net8.0\JWTAuthAPI.csproj.Up2Date
