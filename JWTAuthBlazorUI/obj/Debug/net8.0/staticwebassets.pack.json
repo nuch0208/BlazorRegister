@@ -1,43 +1,43 @@
 {
   "Files": [
     {
-      "Id": "C:\\JWTAuth\\JWTAuthBlazorUI\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "D:\\BlazorRegistred\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\JWTAuth\\JWTAuthBlazorUI\\obj\\Debug\\net8.0\\compressed\\axa56d40i8.gz",
+      "Id": "D:\\BlazorRegistred\\jwtauthblazorui\\obj\\Debug\\net8.0\\compressed\\axa56d40i8.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\JWTAuth\\JWTAuthBlazorUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\JWTAuthBlazorUI.styles.css",
+      "Id": "D:\\BlazorRegistred\\jwtauthblazorui\\obj\\Debug\\net8.0\\scopedcss\\bundle\\JWTAuthBlazorUI.styles.css",
       "PackagePath": "staticwebassets\\JWTAuthBlazorUI.styles.css"
     },
     {
-      "Id": "C:\\JWTAuth\\JWTAuthBlazorUI\\wwwroot\\css\\app.css",
+      "Id": "D:\\BlazorRegistred\\jwtauthblazorui\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\JWTAuth\\JWTAuthBlazorUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "D:\\BlazorRegistred\\jwtauthblazorui\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\JWTAuth\\JWTAuthBlazorUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "D:\\BlazorRegistred\\jwtauthblazorui\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\JWTAuth\\JWTAuthBlazorUI\\wwwroot\\favicon.png",
+      "Id": "D:\\BlazorRegistred\\jwtauthblazorui\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\JWTAuth\\JWTAuthBlazorUI\\wwwroot\\icon-192.png",
+      "Id": "D:\\BlazorRegistred\\jwtauthblazorui\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\JWTAuth\\JWTAuthBlazorUI\\wwwroot\\index.html",
+      "Id": "D:\\BlazorRegistred\\jwtauthblazorui\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\JWTAuth\\JWTAuthBlazorUI\\wwwroot\\sample-data\\weather.json",
+      "Id": "D:\\BlazorRegistred\\jwtauthblazorui\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {

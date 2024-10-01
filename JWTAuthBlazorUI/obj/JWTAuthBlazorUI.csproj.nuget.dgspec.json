@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\JWTAuth\\JWTAuthBlazorUI\\JWTAuthBlazorUI.csproj": {}
+    "D:\\BlazorRegistred\\jwtauthblazorui\\JWTAuthBlazorUI.csproj": {}
   },
   "projects": {
-    "C:\\JWTAuth\\JWTAuthBlazorUI\\JWTAuthBlazorUI.csproj": {
+    "D:\\BlazorRegistred\\jwtauthblazorui\\JWTAuthBlazorUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\JWTAuth\\JWTAuthBlazorUI\\JWTAuthBlazorUI.csproj",
+        "projectUniqueName": "D:\\BlazorRegistred\\jwtauthblazorui\\JWTAuthBlazorUI.csproj",
         "projectName": "JWTAuthBlazorUI",
-        "projectPath": "C:\\JWTAuth\\JWTAuthBlazorUI\\JWTAuthBlazorUI.csproj",
+        "projectPath": "D:\\BlazorRegistred\\jwtauthblazorui\\JWTAuthBlazorUI.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\JWTAuth\\JWTAuthBlazorUI\\obj\\",
+        "outputPath": "D:\\BlazorRegistred\\jwtauthblazorui\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -59,13 +59,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.6, )",
+              "version": "[8.0.5, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )",
+              "version": "[8.0.5, )",
               "autoReferenced": true
             },
             "MudBlazor": {
@@ -87,7 +87,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.8, 8.0.8]"
+              "version": "[8.0.5, 8.0.5]"
             }
           ],
           "frameworkReferences": {
@@ -95,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

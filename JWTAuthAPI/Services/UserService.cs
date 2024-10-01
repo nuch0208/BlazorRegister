@@ -12,6 +12,8 @@ namespace JWTAuthAPI.Services
         {
             _worlDbContext = worldDbContext;
         }
+        
+        //รับค่า register
         private User FromUserRegistrationModelToUserModel(UserRegistrationDto userRegistration)
         {
             return new User
@@ -22,6 +24,8 @@ namespace JWTAuthAPI.Services
                 Password = userRegistration.Password,
             };
         }
+
+        //hash password
         private string HashPassword(string plainPassword)
         {
             byte[] salt = new byte[16];
@@ -36,6 +40,8 @@ namespace JWTAuthAPI.Services
             Array.Copy(rfcPasswordHash, 0, passwordHash, 16, 20);
             return Convert.ToBase64String(passwordHash);
         }
+
+        //register process
         public async Task<(bool IsUserRegistered, string Message)> RegisterNewUserAsync(UserRegistrationDto userRegistration)
         {
             var isUserExist = _worlDbContext.User.Any(_ => _.Email.ToLower() == userRegistration.Email.ToLower());

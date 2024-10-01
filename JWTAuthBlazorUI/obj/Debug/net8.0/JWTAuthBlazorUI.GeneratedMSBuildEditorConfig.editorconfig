@@ -16,47 +16,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = JWTAuthBlazorUI
 build_property.RootNamespace = JWTAuthBlazorUI
-build_property.ProjectDir = C:\JWTAuth\JWTAuthBlazorUI\
+build_property.ProjectDir = D:\BlazorRegistred\jwtauthblazorui\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\JWTAuth\JWTAuthBlazorUI
+build_property.MSBuildProjectDirectory = D:\BlazorRegistred\jwtauthblazorui
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/JWTAuth/JWTAuthBlazorUI/App.razor]
+[D:/BlazorRegistred/jwtauthblazorui/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/JWTAuth/JWTAuthBlazorUI/Pages/Accounts/Registration.razor]
+[D:/BlazorRegistred/jwtauthblazorui/Pages/Accounts/Registration.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcUmVnaXN0cmF0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/JWTAuth/JWTAuthBlazorUI/Pages/Accounts/RegistrationConfirmation.razor]
+[D:/BlazorRegistred/jwtauthblazorui/Pages/Accounts/RegistrationConfirmation.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcUmVnaXN0cmF0aW9uQ29uZmlybWF0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/JWTAuth/JWTAuthBlazorUI/Pages/Counter.razor]
+[D:/BlazorRegistred/jwtauthblazorui/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/JWTAuth/JWTAuthBlazorUI/Pages/Home.razor]
+[D:/BlazorRegistred/jwtauthblazorui/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/JWTAuth/JWTAuthBlazorUI/Pages/Weather.razor]
+[D:/BlazorRegistred/jwtauthblazorui/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/JWTAuth/JWTAuthBlazorUI/_Imports.razor]
+[D:/BlazorRegistred/jwtauthblazorui/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/JWTAuth/JWTAuthBlazorUI/Layout/MainLayout.razor]
+[D:/BlazorRegistred/jwtauthblazorui/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ppgnwbpj2t
 
-[C:/JWTAuth/JWTAuthBlazorUI/Layout/NavMenu.razor]
+[D:/BlazorRegistred/jwtauthblazorui/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ryogt5c0w2
