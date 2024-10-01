@@ -26,5 +26,24 @@ namespace JWTAuthAPI.Controllers
             ModelState.AddModelError("Email", result.Message);
             return BadRequest(ModelState);
         }
+
+        [HttpGet("unique-user-email")]
+        public IActionResult CheckUniqueUserEmail(string email)
+        {
+            var result = _userService.CheckUserUniqueEmail(email);
+            return Ok(result);
+        }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> LoginAsync(LoginDto payload)
+        {
+            var result = await _userService.LoginAsync(payload);
+            if(result.IsLoginSuccess)
+            {
+                return Ok(result.TokeResponse);
+            }
+            ModelState.AddModelError("LoginError", "Invalid Credentials");
+            return BadRequest(ModelState);
+        }
     }
 }

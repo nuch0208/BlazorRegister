@@ -1,31 +1,45 @@
-﻿@inherits LayoutComponentBase
-@* <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+﻿@using System.Security.Claims;
+@inherits LayoutComponentBase
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div> *@
-<MudThemeProvider/>
-<MudPopoverProvider/>
-<MudDialogProvider/>
-<MudSnackbarProvider/>
+<MudThemeProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
 
 <MudLayout>
-    <MudAppBar Color="Color.Primary" >
-        <MudLink Color="Color.Inherit" Underline="Underline.None" Href="/">JWT Auth Demo</MudLink> @*Underline="Underline.None" คือลบเส้นใต้ตรงลิงค์ออก*@
-        <MudSpacer />
-        <MudLink Color="Color.Inherit" Underline="Underline.None" Href="/registration">Registration</MudLink>
+    <MudAppBar Color="Color.Primary">
+        
+        <MudLink Color="Color.Inherit" Underline="Underline.None" Href="/">JWt Auth Demo</MudLink>
+        <AuthorizeView>
+            <Authorized>
+                <MudLink Color="Color.Inherit" Underline="Underline.None" Class="ml-2" Href="/fetchdata">Weather ForeCast</MudLink>
+            </Authorized>
+        </AuthorizeView>
+        <MudSpacer/>
+        <AuthorizeView>
+            <Authorized>
+                <span>@UserDisplyaName(context.User.Claims.ToList())</span>
+            </Authorized>
+            <NotAuthorized>
+                <MudLink Color="Color.Inherit" Underline="Underline.None" Class="mr-2" Href="/login">Login</MudLink>
+                <MudLink Color="Color.Inherit" Underline="Underline.None" Href="/registration">Registration</MudLink>
+            </NotAuthorized>
+        </AuthorizeView>
+        
     </MudAppBar>
     <MudMainContent>
         @Body
     </MudMainContent>
 </MudLayout>
+@code{
+    private string UserDisplyaName(List<Claim> claims)
+    {
+        var firstName = claims.Where(_ => _.Type == "FirstName").Select(_ => _.Value).FirstOrDefault();
+        var lastName = claims.Where(_ => _.Type == "LastName").Select(_ => _.Value).FirstOrDefault();
+        if(!string.IsNullOrEmpty(firstName) || !string.IsNullOrEmpty(lastName))
+        {
+            return $"{firstName}  {lastName}";
+        }
+        var email = claims.Where(_ => _.Type == "Email").Select(_ => _.Value).FirstOrDefault();
+        return email;
+    }
+}

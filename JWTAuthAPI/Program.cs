@@ -1,6 +1,7 @@
 using JWTAuthAPI.Data;
 using JWTAuthAPI.Services;
 using JWTAuthAPI.Data.Entities;
+using JWTAuthAPI.Shared.Settings;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -26,6 +27,8 @@ builder.Services.AddCors(options =>
                 .AllowAnyMethod();
             });
 });
+
+builder.Services.Configure<TokenSettings>(builder.Configuration.GetSection(nameof(TokenSettings)));
 
 var app = builder.Build();
 

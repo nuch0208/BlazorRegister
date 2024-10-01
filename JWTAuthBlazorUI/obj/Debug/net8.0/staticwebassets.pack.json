@@ -1,59 +1,59 @@
 {
   "Files": [
     {
-      "Id": "D:\\blazorregister\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
-      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+      "Id": "/Users/home/Desktop/BlazorRegister/JWTAuthBlazorUI/bin/Debug/net8.0/wwwroot/_framework/blazor.webassembly.js",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
     },
     {
-      "Id": "D:\\blazorregister\\jwtauthblazorui\\obj\\Debug\\net8.0\\compressed\\by5r7k3pty.gz",
-      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+      "Id": "/Users/home/Desktop/BlazorRegister/JWTAuthBlazorUI/obj/Debug/net8.0/compressed/2pwygwp80x.gz",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
     },
     {
-      "Id": "D:\\blazorregister\\jwtauthblazorui\\obj\\Debug\\net8.0\\scopedcss\\bundle\\JWTAuthBlazorUI.styles.css",
-      "PackagePath": "staticwebassets\\JWTAuthBlazorUI.styles.css"
+      "Id": "/Users/home/Desktop/BlazorRegister/JWTAuthBlazorUI/obj/Debug/net8.0/scopedcss/bundle/JWTAuthBlazorUI.styles.css",
+      "PackagePath": "staticwebassets/JWTAuthBlazorUI.styles.css"
     },
     {
-      "Id": "D:\\blazorregister\\jwtauthblazorui\\wwwroot\\css\\app.css",
-      "PackagePath": "staticwebassets\\css\\app.css"
+      "Id": "/Users/home/Desktop/BlazorRegister/JWTAuthBlazorUI/wwwroot/css/app.css",
+      "PackagePath": "staticwebassets/css/app.css"
     },
     {
-      "Id": "D:\\blazorregister\\jwtauthblazorui\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+      "Id": "/Users/home/Desktop/BlazorRegister/JWTAuthBlazorUI/wwwroot/css/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
     },
     {
-      "Id": "D:\\blazorregister\\jwtauthblazorui\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+      "Id": "/Users/home/Desktop/BlazorRegister/JWTAuthBlazorUI/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\blazorregister\\jwtauthblazorui\\wwwroot\\favicon.png",
-      "PackagePath": "staticwebassets\\favicon.png"
+      "Id": "/Users/home/Desktop/BlazorRegister/JWTAuthBlazorUI/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
     },
     {
-      "Id": "D:\\blazorregister\\jwtauthblazorui\\wwwroot\\icon-192.png",
-      "PackagePath": "staticwebassets\\icon-192.png"
+      "Id": "/Users/home/Desktop/BlazorRegister/JWTAuthBlazorUI/wwwroot/icon-192.png",
+      "PackagePath": "staticwebassets/icon-192.png"
     },
     {
-      "Id": "D:\\blazorregister\\jwtauthblazorui\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
+      "Id": "/Users/home/Desktop/BlazorRegister/JWTAuthBlazorUI/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
     },
     {
-      "Id": "D:\\blazorregister\\jwtauthblazorui\\wwwroot\\sample-data\\weather.json",
-      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+      "Id": "/Users/home/Desktop/BlazorRegister/JWTAuthBlazorUI/wwwroot/sample-data/weather.json",
+      "PackagePath": "staticwebassets/sample-data/weather.json"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.JWTAuthBlazorUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.JWTAuthBlazorUI.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.JWTAuthBlazorUI.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.JWTAuthBlazorUI.props",
       "PackagePath": "build\\JWTAuthBlazorUI.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.JWTAuthBlazorUI.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.JWTAuthBlazorUI.props",
       "PackagePath": "buildMultiTargeting\\JWTAuthBlazorUI.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.JWTAuthBlazorUI.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.JWTAuthBlazorUI.props",
       "PackagePath": "buildTransitive\\JWTAuthBlazorUI.props"
     }
   ],

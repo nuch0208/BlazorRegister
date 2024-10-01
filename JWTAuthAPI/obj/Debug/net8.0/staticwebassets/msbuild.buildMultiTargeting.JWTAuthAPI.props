@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\build\JWTAuthAPI.props" />
+  <Import Project="../build/JWTAuthAPI.props" />
 </Project>

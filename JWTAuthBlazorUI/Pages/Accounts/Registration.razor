@@ -55,11 +55,18 @@
 @code {
     RegistrationVM registrationModel = new RegistrationVM();
 
-    RegistrationValidationVM validationModel = new RegistrationValidationVM();
+    RegistrationValidationVM validationModel;
 
     MudForm form;
 
     string APIErrorMessages;
+
+    protected override Task OnInitializedAsync()
+    {
+        //var httpClient = _httpClientFactory.CreateClient("Dot7Api");
+        validationModel = new RegistrationValidationVM(_http);
+        return base.OnInitializedAsync();
+    }
 
     private async Task RegisterAsync()
     {
