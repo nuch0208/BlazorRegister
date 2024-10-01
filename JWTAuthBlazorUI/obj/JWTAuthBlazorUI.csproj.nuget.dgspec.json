@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BlazorRegistred\\jwtauthblazorui\\JWTAuthBlazorUI.csproj": {}
+    "D:\\blazorregister\\jwtauthblazorui\\JWTAuthBlazorUI.csproj": {}
   },
   "projects": {
-    "D:\\BlazorRegistred\\jwtauthblazorui\\JWTAuthBlazorUI.csproj": {
+    "D:\\blazorregister\\jwtauthblazorui\\JWTAuthBlazorUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BlazorRegistred\\jwtauthblazorui\\JWTAuthBlazorUI.csproj",
+        "projectUniqueName": "D:\\blazorregister\\jwtauthblazorui\\JWTAuthBlazorUI.csproj",
         "projectName": "JWTAuthBlazorUI",
-        "projectPath": "D:\\BlazorRegistred\\jwtauthblazorui\\JWTAuthBlazorUI.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\BlazorRegistred\\jwtauthblazorui\\obj\\",
+        "projectPath": "D:\\blazorregister\\jwtauthblazorui\\JWTAuthBlazorUI.csproj",
+        "packagesPath": "C:\\Users\\SKH-PC02\\.nuget\\packages\\",
+        "outputPath": "D:\\blazorregister\\jwtauthblazorui\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\SKH-PC02\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -59,13 +59,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.5, )",
+              "version": "[8.0.8, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.5, )",
+              "version": "[8.0.8, )",
               "autoReferenced": true
             },
             "MudBlazor": {
@@ -87,7 +87,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.5, 8.0.5]"
+              "version": "[8.0.8, 8.0.8]"
             }
           ],
           "frameworkReferences": {
@@ -95,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

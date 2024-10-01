@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BlazorRegistred\\jwtauthapi\\JWTAuthAPI.csproj": {}
+    "D:\\blazorregister\\jwtauthapi\\JWTAuthAPI.csproj": {}
   },
   "projects": {
-    "D:\\BlazorRegistred\\jwtauthapi\\JWTAuthAPI.csproj": {
+    "D:\\blazorregister\\jwtauthapi\\JWTAuthAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BlazorRegistred\\jwtauthapi\\JWTAuthAPI.csproj",
+        "projectUniqueName": "D:\\blazorregister\\jwtauthapi\\JWTAuthAPI.csproj",
         "projectName": "JWTAuthAPI",
-        "projectPath": "D:\\BlazorRegistred\\jwtauthapi\\JWTAuthAPI.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\BlazorRegistred\\jwtauthapi\\obj\\",
+        "projectPath": "D:\\blazorregister\\jwtauthapi\\JWTAuthAPI.csproj",
+        "packagesPath": "C:\\Users\\SKH-PC02\\.nuget\\packages\\",
+        "outputPath": "D:\\blazorregister\\jwtauthapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\SKH-PC02\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -81,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
