@@ -1,5 +1,8 @@
-﻿@page "/weather"
-@inject HttpClient Http
+﻿@page "/fetchdata"
+@using Microsoft.AspNetCore.Authorization;
+@* @inject HttpClient Http *@
+@inject IHttpClientFactory _httpClientFactory
+@attribute [Authorize]
 
 <PageTitle>Weather</PageTitle>
 
@@ -41,7 +44,8 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("/WeatherForecast");
+        var httpClient = _httpClientFactory.CreateClient("Dot8Api");
+        forecasts = await httpClient.GetFromJsonAsync<WeatherForecast[]>("/WeatherForecast");
     }
 
     public class WeatherForecast

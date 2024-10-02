@@ -9,5 +9,6 @@ namespace JWTAuthAPI.Services
        bool CheckUserUniqueEmail(string email);
 
        Task<(bool IsLoginSuccess, JWTTokenResponseDto TokeResponse)> LoginAsync(LoginDto loginPayload);
+       Task<(string ErrorMessage, JWTTokenResponseDto JwtTokenResponse)> RenewTokenAsync(RenewTokenRequestDto renewTokenRequest);
     }
 }

@@ -1,8 +1,11 @@
 using JWTAuthAPI.Data;
 using JWTAuthAPI.Services;
 using JWTAuthAPI.Data.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using JWTAuthAPI.Shared.Settings;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +32,25 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.Configure<TokenSettings>(builder.Configuration.GetSection(nameof(TokenSettings)));
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        var tokenSettings = builder.Configuration.GetSection(nameof(TokenSettings)).Get<TokenSettings>();
+        options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidIssuer = tokenSettings.Issuer,
+
+            ValidateAudience = true,
+            ValidAudience = tokenSettings.Audience,
+
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tokenSettings.SecretKey)),
+
+            ClockSkew = TimeSpan.Zero
+        };
+    });
 
 var app = builder.Build();
 

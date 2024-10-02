@@ -107,7 +107,7 @@ namespace JWTAuthAPI.Services
             var securityToken = new JwtSecurityToken(
                 issuer: _tokenSettings.Issuer,
                 audience: _tokenSettings.Audience,
-                expires: DateTime.Now.AddMinutes(30),
+                expires: DateTime.Now.AddMinutes(1),
                 signingCredentials: credentials,
                 claims: cliams);
 
@@ -129,12 +129,62 @@ namespace JWTAuthAPI.Services
             if(!validPassword) { return (false, null); }
 
             var jwtAccessToken = GenerateJwtToken(user);
+            var refreshToken = await GenerateRefreshToken(user.Id);
 
             var result = new JWTTokenResponseDto
             {
                 AccessToken = jwtAccessToken,
+                RefreshToken = refreshToken,
             };
             return (true, result);
+        }
+
+        private async Task<string> GenerateRefreshToken(int userId)
+        {
+            byte[] bytesOfToken = new byte[32];
+            using(var rng = RandomNumberGenerator.Create())
+            {
+                rng.GetBytes(bytesOfToken);
+            }
+            var token = Convert.ToBase64String(bytesOfToken);
+            
+            var newReFreshToken = new UserRefreshToken
+            {
+                ExpirationDate = DateTime.Now.AddDays(3),
+                Token = token,
+                UserId = userId
+            };
+
+            _worlDbContext.UserRefreshToken.Add(newReFreshToken);
+            await _worlDbContext.SaveChangesAsync();
+
+            return token;
+        }
+
+        public async Task<(string ErrorMessage, JWTTokenResponseDto JwtTokenResponse)> RenewTokenAsync(RenewTokenRequestDto renewTokenRequest)
+        {
+            var existingRefreshToken = await _worlDbContext.UserRefreshToken
+                .Where(_ => _.UserId == renewTokenRequest.UserId &&
+                _.Token == renewTokenRequest.RefreshToken &&
+                _.ExpirationDate > DateTime.Now).FirstOrDefaultAsync();
+
+            if(existingRefreshToken == null)
+            {
+                return ("Invalid Refresh Token", null);
+            }
+
+            _worlDbContext.UserRefreshToken.Remove(existingRefreshToken);
+            await _worlDbContext.SaveChangesAsync();
+
+            var user = await _worlDbContext.User.Where(_ => _.Id == renewTokenRequest.UserId).FirstOrDefaultAsync();
+            var jwtAccessToken = GenerateJwtToken(user);
+            var refreshToken = await GenerateRefreshToken(user.Id);
+            var result = new JWTTokenResponseDto
+            {
+                AccessToken = jwtAccessToken,
+                RefreshToken = refreshToken,
+            };
+            return ("", result);
         }
     }
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JWTAuthBlazorUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c558a298d4c4a389a8cf23ac6da2991f39e9e681")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad4707c7e354bf4d9bf99725ade1b5a1c38439d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("JWTAuthBlazorUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JWTAuthBlazorUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -10,5 +10,6 @@ namespace JWTAuthAPI.Data
             
         }
         public DbSet<User> User { get; set;}
+        public DbSet<UserRefreshToken> UserRefreshToken {get; set;}
     }
 }

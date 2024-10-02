@@ -45,5 +45,16 @@ namespace JWTAuthAPI.Controllers
             ModelState.AddModelError("LoginError", "Invalid Credentials");
             return BadRequest(ModelState);
         }
+
+        [HttpPost("renew-tokens")]
+        public async Task<IActionResult> RenewTokenAsync(RenewTokenRequestDto renewTokenRequest)
+        {
+            var result = await _userService.RenewTokenAsync(renewTokenRequest);
+            if (!string.IsNullOrEmpty(result.ErrorMessage))
+            {
+                return BadRequest(result.ErrorMessage);
+            }
+            return Ok(result.JwtTokenResponse);
+        }
     }
 }

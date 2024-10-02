@@ -553,3 +553,4 @@ D:/blazorregister/jwtauthapi/obj/Debug/net8.0/ref/JWTAuthAPI.dll
 /Users/home/Desktop/BlazorRegister/JWTAuthAPI/obj/Debug/net8.0/JWTAuthAPI.pdb
 /Users/home/Desktop/BlazorRegister/JWTAuthAPI/obj/Debug/net8.0/JWTAuthAPI.genruntimeconfig.cache
 /Users/home/Desktop/BlazorRegister/JWTAuthAPI/obj/Debug/net8.0/ref/JWTAuthAPI.dll
+/Users/home/Desktop/BlazorRegister/JWTAuthAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
