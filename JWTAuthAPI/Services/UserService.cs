@@ -1,16 +1,26 @@
 using JWTAuthAPI.Data.Entities;
 using JWTAuthAPI.Dtos;
 using JWTAuthAPI.Data;
+using JWTAuthAPI.Shared.Settings;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using System.Security.Cryptography;
+using System.Security.Claims;
+using Microsoft.Extensions.Options;
+using System.Text;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace JWTAuthAPI.Services
 {
     public class UserService : IUserService
     {
-        private readonly MyWorldDbContext _worlDbContext;
-        public UserService(MyWorldDbContext worldDbContext)
+        private readonly MyWorldDbContext _worldDbContext;
+        private readonly TokenSettings _tokenSettings;
+        public UserService(MyWorldDbContext worldDbContext,
+            IOptions<TokenSettings> tokenSettings)
         {
-            _worlDbContext = worldDbContext;
+            _worldDbContext = worldDbContext;
+            _tokenSettings = tokenSettings.Value;
         }
         
         //รับค่า register
@@ -44,7 +54,7 @@ namespace JWTAuthAPI.Services
         //register process
         public async Task<(bool IsUserRegistered, string Message)> RegisterNewUserAsync(UserRegistrationDto userRegistration)
         {
-            var isUserExist = _worlDbContext.User.Any(_ => _.Email.ToLower() == userRegistration.Email.ToLower());
+            var isUserExist = _worldDbContext.User.Any(_ => _.Email.ToLower() == userRegistration.Email.ToLower());
             if (isUserExist)
             {
                 return (false, "Email Adddress Already Registred");
@@ -52,9 +62,82 @@ namespace JWTAuthAPI.Services
             var newUser = FromUserRegistrationModelToUserModel(userRegistration);
             newUser.Password = HashPassword(newUser.Password);
 
-            _worlDbContext.User.Add(newUser);
-            await _worlDbContext.SaveChangesAsync();
+            _worldDbContext.User.Add(newUser);
+            await _worldDbContext.SaveChangesAsync();
             return (true, "Success");
+        }
+
+        public bool CheckUniqueUserEmail(string email)
+        {
+            var userAlreadyExist = _worldDbContext.User.Any(_ => _.Email.ToLower() == email.ToLower());
+            return !userAlreadyExist;
+        }
+
+        private bool PasswordVerification(string plainPassword, string dbPassword)
+        {
+            byte[] dbPasswordHash = Convert.FromBase64String(dbPassword);
+            byte[] salt = new byte[16];
+            Array.Copy(dbPasswordHash, 0,salt, 0, 16);
+
+            var rfcPassword = new Rfc2898DeriveBytes(plainPassword, salt, 1000, HashAlgorithmName.SHA1);
+            byte[] rfcPasswordHash = rfcPassword.GetBytes(20);
+
+            for(int i =0; i < rfcPasswordHash.Length; i++)
+            {
+                if (dbPasswordHash[i + 16] !=rfcPasswordHash[i])
+                {
+                    return false; //invalid password
+                }
+            }
+            return true; //valid password
+        }
+
+        private string GenerateJwtToken(User user)
+        {
+            var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_tokenSettings.SecretKey));
+            var credentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256);
+            var cliams = new List<Claim>();
+            cliams.Add(new Claim("Sub" , user.Id.ToString()));
+            cliams.Add(new Claim("FirstName" , user.FirstName));
+            cliams.Add(new Claim("LastName", user.LastName));
+            cliams.Add(new Claim("Email" , user.Email));
+
+            var securityToken = new JwtSecurityToken(
+                issuer: _tokenSettings.Issuer,
+                audience: _tokenSettings.Audience,
+                expires: DateTime.Now.AddMinutes(30),
+                signingCredentials: credentials,
+                claims: cliams);
+
+            return new JwtSecurityTokenHandler().WriteToken(securityToken);
+        }
+
+        public async Task<(bool IsLoginSuccess, JWTTokenResponseDto TokenResponse)> LoginAsync(LoginDto loginPayload)
+        {
+            if(string.IsNullOrEmpty(loginPayload.Email) || string.IsNullOrEmpty(loginPayload.Password))
+            {
+                return (false, null);
+            } 
+             
+            var user = await _worldDbContext.User.Where(_ => _.Email.ToLower() == loginPayload.Email.ToLower()).FirstOrDefaultAsync();
+            if (user == null) 
+            {
+                return (false, null);
+            }
+
+            bool validPassword = PasswordVerification(loginPayload.Password, user.Password);
+            if(!validPassword)
+            {
+                return (false, null);
+            }
+
+            var jwtAccessToken = GenerateJwtToken(user);
+            
+            var result = new JWTTokenResponseDto
+            {
+                AccessToken = jwtAccessToken,
+            };
+            return (true, result);
         }
     }
 }

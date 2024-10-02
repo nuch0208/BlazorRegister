@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LWz5OkW3HgSD4mBEt0Wgeu0cdG8woJ8W0gp1uz2ARnc=",
+  "Hash": "JQYSxMmqEDGeULKA/6cY1Lk4OHeuDBQOxH6VMzvs2hY=",
   "Source": "JWTAuthBlazorUI",
   "BasePath": "/",
   "Mode": "Root",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\blazor.boot.json"
+    },
+    {
+      "Identity": "D:\\BlazorRegistred\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm",
+      "SourceId": "JWTAuthBlazorUI",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\BlazorRegistred\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\BlazorRegistred\\jwtauthblazorui\\obj\\Debug\\net8.0\\webcil\\Blazored.LocalStorage.wasm"
     },
     {
       "Identity": "D:\\BlazorRegistred\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
@@ -338,6 +357,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\BlazorRegistred\\jwtauthblazorui\\obj\\Debug\\net8.0\\webcil\\Microsoft.AspNetCore.Authorization.wasm"
+    },
+    {
+      "Identity": "D:\\BlazorRegistred\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm",
+      "SourceId": "JWTAuthBlazorUI",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\BlazorRegistred\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\BlazorRegistred\\jwtauthblazorui\\obj\\Debug\\net8.0\\webcil\\Microsoft.AspNetCore.Components.Authorization.wasm"
     },
     {
       "Identity": "D:\\BlazorRegistred\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.wasm",
@@ -6439,6 +6477,25 @@
       "OriginalItemSpec": "D:\\BlazorRegistred\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.IO.Compression.Brotli.wasm"
     },
     {
+      "Identity": "D:\\BlazorRegistred\\jwtauthblazorui\\obj\\Debug\\net8.0\\compressed\\nx3vzs9i0z.gz",
+      "SourceId": "JWTAuthBlazorUI",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\BlazorRegistred\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\BlazorRegistred\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\BlazorRegistred\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm"
+    },
+    {
       "Identity": "D:\\BlazorRegistred\\jwtauthblazorui\\obj\\Debug\\net8.0\\compressed\\o3a91iixve.gz",
       "SourceId": "JWTAuthBlazorUI",
       "SourceType": "Computed",
@@ -7349,6 +7406,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\BlazorRegistred\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.ComponentModel.Primitives.wasm"
+    },
+    {
+      "Identity": "D:\\BlazorRegistred\\jwtauthblazorui\\obj\\Debug\\net8.0\\compressed\\uzo5fy2gkk.gz",
+      "SourceId": "JWTAuthBlazorUI",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\BlazorRegistred\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\BlazorRegistred\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\BlazorRegistred\\jwtauthblazorui\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm"
     },
     {
       "Identity": "D:\\BlazorRegistred\\jwtauthblazorui\\obj\\Debug\\net8.0\\compressed\\v8xuo02wg8.gz",

@@ -3153,3 +3153,13 @@ D:\BlazorRegistred\jwtauthblazorui\obj\Debug\net8.0\compressed\thrxicrk6p.gz
 D:\BlazorRegistred\jwtauthblazorui\obj\Debug\net8.0\compressed\jt7uk8m3br.gz
 D:\BlazorRegistred\jwtauthblazorui\obj\Debug\net8.0\compressed\zq425gkl45.gz
 D:\BlazorRegistred\jwtauthblazorui\obj\Debug\net8.0\compressed\e19fonschf.gz
+D:\BlazorRegistred\jwtauthblazorui\bin\Debug\net8.0\wwwroot\_framework\Blazored.LocalStorage.wasm
+D:\BlazorRegistred\jwtauthblazorui\bin\Debug\net8.0\wwwroot\_framework\Blazored.LocalStorage.wasm.gz
+D:\BlazorRegistred\jwtauthblazorui\bin\Debug\net8.0\Blazored.LocalStorage.dll
+D:\BlazorRegistred\jwtauthblazorui\obj\Debug\net8.0\webcil\Blazored.LocalStorage.wasm
+D:\BlazorRegistred\jwtauthblazorui\obj\Debug\net8.0\compressed\nx3vzs9i0z.gz
+D:\BlazorRegistred\jwtauthblazorui\bin\Debug\net8.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.wasm
+D:\BlazorRegistred\jwtauthblazorui\bin\Debug\net8.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.wasm.gz
+D:\BlazorRegistred\jwtauthblazorui\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Authorization.dll
+D:\BlazorRegistred\jwtauthblazorui\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Components.Authorization.wasm
+D:\BlazorRegistred\jwtauthblazorui\obj\Debug\net8.0\compressed\uzo5fy2gkk.gz
