@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "JWTAuthBlazorUI",
   "resources": {
-    "hash": "sha256-ASzzKgAn6ftDl2H+UEuOLno5rrg5ESpnsRgWDzVEaOE=",
+    "hash": "sha256-vwxnGIz9Fws+BCGaM9BQfPDiW9pfE7/8N9Xl3UXfgdc=",
     "jsModuleNative": {
       "dotnet.native.8.0.5.sb5det8h1d.js": "sha256-boyHe+0RMZDkzBKGhsrnXPhPg3oZ6UqJnTUzngJPjNY="
     },
@@ -214,10 +214,10 @@
       "mscorlib.wasm": "sha256-EpWTfh4m/hEcXRFYMCR9YeYHwdUJgcm1laBaxWfq2S4=",
       "netstandard.wasm": "sha256-2kH24/YfHmU3B4eYRyRmiwebYROM4+B9eDWKvMnUdP8=",
       "System.Private.CoreLib.wasm": "sha256-CsySKiP7HYY1pS8LTDE60EkqiX5oHb3WoEZHDNd1yK0=",
-      "JWTAuthBlazorUI.wasm": "sha256-LKO0eb77+Mm3Egt/bx/MxI0H371g2V/0IKxRw7F22CQ="
+      "JWTAuthBlazorUI.wasm": "sha256-U4bU8LkcDihogsyPcNFI+ofQfF8xfTLS/5t4PMwp5PM="
     },
     "pdb": {
-      "JWTAuthBlazorUI.pdb": "sha256-SBj5cwQW6jRj6A2iv4Wl0GCHyXBYFvuoes3QCd1yRZE="
+      "JWTAuthBlazorUI.pdb": "sha256-7NfElGvCLTkI+8fV3lDHk23YsIEMaD20Ocs3ylbap8I="
     }
   },
   "cacheBootResources": true,

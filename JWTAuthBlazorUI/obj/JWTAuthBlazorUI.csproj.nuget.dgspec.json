@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BlazorRegistred\\jwtauthblazorui\\JWTAuthBlazorUI.csproj": {}
+    "D:\\BlazorRegistred\\JWTAuthBlazorUI\\JWTAuthBlazorUI.csproj": {}
   },
   "projects": {
-    "D:\\BlazorRegistred\\jwtauthblazorui\\JWTAuthBlazorUI.csproj": {
+    "D:\\BlazorRegistred\\JWTAuthBlazorUI\\JWTAuthBlazorUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BlazorRegistred\\jwtauthblazorui\\JWTAuthBlazorUI.csproj",
+        "projectUniqueName": "D:\\BlazorRegistred\\JWTAuthBlazorUI\\JWTAuthBlazorUI.csproj",
         "projectName": "JWTAuthBlazorUI",
-        "projectPath": "D:\\BlazorRegistred\\jwtauthblazorui\\JWTAuthBlazorUI.csproj",
+        "projectPath": "D:\\BlazorRegistred\\JWTAuthBlazorUI\\JWTAuthBlazorUI.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\BlazorRegistred\\jwtauthblazorui\\obj\\",
+        "outputPath": "D:\\BlazorRegistred\\JWTAuthBlazorUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"

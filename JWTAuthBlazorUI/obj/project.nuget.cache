@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mrIDSW58+k8=",
+  "dgSpecHash": "OhH3trcpLGI=",
   "success": true,
-  "projectFilePath": "D:\\BlazorRegistred\\jwtauthblazorui\\JWTAuthBlazorUI.csproj",
+  "projectFilePath": "D:\\BlazorRegistred\\JWTAuthBlazorUI\\JWTAuthBlazorUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\blazored.localstorage\\4.5.0\\blazored.localstorage.4.5.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512",
